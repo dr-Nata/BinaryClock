@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.canvas.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane prefHeight="273.0" prefWidth="380.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.binaryclock.HelloController">
+   <center>
+      <VBox alignment="CENTER" spacing="20.0">
+          <padding>
+              <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+          </padding>
+         <HBox prefHeight="171.0">
+            <children>
+               <VBox prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: black;">
+                  <children>
+                     <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="10.0">
+                        <children>
+                           <Rectangle fx:id="h8" arcHeight="20.0" arcWidth="20.0" fill="#8a8585" height="25.0" onMousePressed="#onRectClick" stroke="BLACK" strokeLineCap="ROUND" strokeType="INSIDE" width="65.0" />
+                           <Text fx:id="th8" fill="#8a8585" strokeType="OUTSIDE" strokeWidth="0.0" text="8" wrappingWidth="12.625">
+                              <font>
+                                 <Font size="16.0" />
+                              </font>
+                           </Text>
+                        </children>
+                     </HBox>
+                      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="10.0">
+                          <children>
+                              <Rectangle fx:id="h4" arcHeight="20.0" arcWidth="20.0" fill="#8a8585" height="25.0" onMousePressed="#onRectClick" stroke="BLACK" strokeLineCap="ROUND" strokeType="INSIDE" width="65.0" />
+                              <Text fx:id="th4" fill="#8a8585" strokeType="OUTSIDE" strokeWidth="0.0" text="4" wrappingWidth="12.625">
+                                  <font>
+                                      <Font size="16.0" />
+                                  </font>
+                              </Text>
+                          </children>
+                      </HBox>
+                      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="10.0">
+                          <children>
+                              <Rectangle fx:id="h2" arcHeight="20.0" arcWidth="20.0" fill="#8a8585" height="25.0" onMousePressed="#onRectClick" stroke="BLACK" strokeLineCap="ROUND" strokeType="INSIDE" width="65.0" />
+                              <Text fx:id="th2" fill="#8a8585" strokeType="OUTSIDE" strokeWidth="0.0" text="2" wrappingWidth="12.625">
+                                  <font>
+                                      <Font size="16.0" />
+                                  </font>
+                              </Text>
+                          </children>
+                      </HBox>
+                      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="10.0">
+                          <children>
+                              <Rectangle fx:id="h1" arcHeight="20.0" arcWidth="20.0" fill="#8a8585" height="25.0" onMousePressed="#onRectClick" stroke="BLACK" strokeLineCap="ROUND" strokeType="INSIDE" width="65.0" />
+                              <Text fx:id="th1" fill="#8a8585" strokeType="OUTSIDE" strokeWidth="0.0" text="1" wrappingWidth="12.625">
+                                  <font>
+                                      <Font size="16.0" />
+                                  </font>
+                              </Text>
+                          </children>
+                      </HBox>
+                  </children>
+               </VBox>
+               <AnchorPane prefHeight="100.0" prefWidth="138.0" />
+               <AnchorPane prefHeight="156.0" prefWidth="100.0" style="-fx-background-color: #000000;">
+                  <children>
+                     <Canvas fx:id="canvasAmPm" height="156.0" width="100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                  </children>
+               </AnchorPane>
+            </children>
+         </HBox>
+         <HBox prefHeight="56.0" prefWidth="240.0" style="-fx-background-color: #000000;">
+            <children>
+               <VBox alignment="CENTER">
+                  <children>
+                     <Text fx:id="tm32" fill="#868686" strokeType="OUTSIDE" strokeWidth="0.0" text="32" />
+                     <Circle fx:id="m32" fill="DARKGRAY" onMousePressed="#onCircleClick" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
+                  </children>
+               </VBox>
+                <VBox alignment="CENTER">
+                    <children>
+                        <Text fx:id="tm16" fill="#868686" strokeType="OUTSIDE" strokeWidth="0.0" text="16" />
+                        <Circle fx:id="m16" fill="DARKGRAY" onMousePressed="#onCircleClick" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
+                    </children>
+                </VBox>
+                <VBox alignment="CENTER">
+                    <children>
+                        <Text fx:id="tm8" fill="#868686" strokeType="OUTSIDE" strokeWidth="0.0" text="8" />
+                        <Circle fx:id="m8" fill="DARKGRAY" onMousePressed="#onCircleClick" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
+                    </children>
+                </VBox>
+                <VBox alignment="CENTER">
+                    <children>
+                        <Text fx:id="tm4" fill="#868686" strokeType="OUTSIDE" strokeWidth="0.0" text="4" />
+                        <Circle fx:id="m4" fill="DARKGRAY" onMousePressed="#onCircleClick" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
+                    </children>
+                </VBox>
+                <VBox alignment="CENTER">
+                    <children>
+                        <Text fx:id="tm2" fill="#868686" strokeType="OUTSIDE" strokeWidth="0.0" text="2" />
+                        <Circle fx:id="m2" fill="DARKGRAY" onMousePressed="#onCircleClick" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
+                    </children>
+                </VBox>
+                <VBox alignment="CENTER">
+                    <children>
+                        <Text fx:id="tm1" fill="#868686" strokeType="OUTSIDE" strokeWidth="0.0" text="1" />
+                        <Circle fx:id="m1" fill="DARKGRAY" onMousePressed="#onCircleClick" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
+                    </children>
+                </VBox>
+            </children>
+         </HBox>
+      </VBox>
+   </center>
+   <right>
+      <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="20.0" style="-fx-background-color: black;" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="fullTimeLabel" prefHeight="36.0" prefWidth="64.0" text="00:00" textAlignment="CENTER" textFill="#ebc932">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+            <Button mnemonicParsing="false" onAction="#onRestart" text="Restart" />
+            <RadioButton fx:id="trainingMode" mnemonicParsing="false" onAction="#onClickTimeMode" selected="true" text="Training" textFill="#dda73a">
+               <toggleGroup>
+                  <ToggleGroup fx:id="timeMode" />
+               </toggleGroup>
+            </RadioButton>
+            <RadioButton fx:id="clockMode" mnemonicParsing="false" onAction="#onClickTimeMode" text="Clock    " textFill="#dda73a" toggleGroup="$timeMode" />
+         </children>
+      </VBox>
+   </right>
+</BorderPane>
